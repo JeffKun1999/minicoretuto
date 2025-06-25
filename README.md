@@ -38,7 +38,7 @@ django_fastapi_comisiones/
 ### 1. Clonar el proyecto
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/JeffKun1999/minicoretuto.git
 cd django_fastapi_comisiones
 ```
 
