@@ -33,7 +33,7 @@ django_fastapi_comisiones/
 
 ---
 
-## 🔧 Paso a Paso
+## Paso a Paso
 
 ### 1. Clonar el proyecto
 
