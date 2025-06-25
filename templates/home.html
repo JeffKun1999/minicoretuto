@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Comisiones</title>
+</head>
+<body>
+
+    <h1>Consulta de Comisiones</h1>
+
+    <form method="get">
+        Desde: <input type="date" name="start_date" value="{{ start_date }}">
+        Hasta: <input type="date" name="end_date" value="{{ end_date }}">
+        <button type="submit">Calcular</button>
+    </form>
+
+    {% if start_date and end_date %}
+        <p>Consultando desde: {{ start_date }} hasta {{ end_date }}</p>
+    {% endif %}
+
+    {% if resultado %}
+        <h2>Resultado:</h2>
+        <table border="1">
+            <tr><th>Vendedor</th><th>Comisión</th></tr>
+            {% for item in resultado %}
+                <tr>
+                    <td>{{ item.vendedor }}</td>
+                    <td>${{ item.comision }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+
+    <hr>
+
+    <h2>Ventas (datos quemados)</h2>
+    <table border="1">
+        <tr><th>Fecha venta</th><th>Vendedor ID</th><th>Cuota Monto</th></tr>
+        <tr><td>2025-05-21</td><td>1</td><td>400.00</td></tr>
+        <tr><td>2025-05-29</td><td>2</td><td>600.00</td></tr>
+        <tr><td>2025-06-03</td><td>2</td><td>200.00</td></tr>
+        <tr><td>2025-06-09</td><td>1</td><td>300.00</td></tr>
+        <tr><td>2025-06-11</td><td>3</td><td>900.00</td></tr>
+    </table>
+
+    <h2>Reglas de Comisión</h2>
+    <table border="1">
+        <tr><th>ID Regla</th><th>Porcentaje</th><th>Monto mínimo</th></tr>
+        <tr><td>1</td><td>6%</td><td>$600</td></tr>
+        <tr><td>2</td><td>8%</td><td>$500</td></tr>
+        <tr><td>3</td><td>10%</td><td>$800</td></tr>
+        <tr><td>4</td><td>115%</td><td>$1000</td></tr>
+    </table>
+
+    
+
+</body>
+</html>
