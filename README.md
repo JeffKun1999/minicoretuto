@@ -4,7 +4,7 @@ Este proyecto demuestra cómo integrar un frontend en **Django** con un backend 
 
 ---
 
-## 🧩 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 django_fastapi_comisiones/
@@ -73,7 +73,7 @@ Visita `http://127.0.0.1:8000/`, selecciona un rango de fechas y haz clic en **C
 
 ---
 
-## 🧠 Lógica del Cálculo de Comisiones
+## Lógica del Cálculo de Comisiones
 
 El backend de FastAPI calcula comisiones según reglas como:
 
@@ -86,7 +86,7 @@ El resultado se devuelve en JSON, y Django lo renderiza en una tabla.
 
 ---
 
-## 🌐 Despliegue en Render
+## Despliegue en Render
 Te recomiendo esperar un poco a que se despliegue, dado que está desplegado con recursos free y no hay disponibilidad del 100%
 
 - **FastAPI** se desplegó en:  
@@ -98,7 +98,7 @@ Te recomiendo esperar un poco a que se despliegue, dado que está desplegado con
   `https://django-frontend-3cq5.onrender.com`
 ---
 
-## 📎 Enlaces útiles
+## Enlaces útiles
 
 | Recurso | Enlace |
 |--------|--------|
@@ -110,7 +110,7 @@ Te recomiendo esperar un poco a que se despliegue, dado que está desplegado con
 
 ---
 
-## 🧪 Créditos de ejemplo
+## Créditos de ejemplo
 
 Los datos están quemados (hardcoded) para fines demostrativos, tanto los vendedores como las reglas de comisión y ventas.
 
