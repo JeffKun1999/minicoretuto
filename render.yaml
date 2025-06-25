@@ -9,7 +9,7 @@ services:
       - key: DJANGO_SETTINGS_MODULE
         value: frontend_django.settings
       - key: PYTHON_VERSION
-        value: 3.10
+        value: 3.10.13
 
   - type: web
     name: fastapi-backend
