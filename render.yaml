@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: django-frontend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn frontend_django.wsgi:application --bind 0.0.0.0:$PORT
+    plan: free
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: frontend_django.settings
+      - key: PYTHON_VERSION
+        value: 3.10
+
+  - type: web
+    name: fastapi-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend_fastapi.main:app --host 0.0.0.0 --port $PORT
+    plan: free
